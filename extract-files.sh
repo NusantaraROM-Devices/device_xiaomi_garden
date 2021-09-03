@@ -42,6 +42,9 @@ function blob_fixup {
         lib/libsink.so)
             "$PATCHELF" --add-needed "libshim_vtservice.so" "$2"
             ;;
+        lib/libsink.so)
+            "$PATCHELF" --add-needed "libshim_sink.so" "$2"
+            ;;
     esac
 }
 
