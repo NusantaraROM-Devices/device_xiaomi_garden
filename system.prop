@@ -38,6 +38,9 @@ vendor.display.enable_default_color_mode=0
 # RIL
 persist.sys.fflag.override.settings_provider_model=false
 
+# IORap
+ro.iorapd.enable=true 
+
 # IPO
 sys.ipo.disable=1
 
