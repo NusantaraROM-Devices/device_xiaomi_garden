@@ -40,6 +40,7 @@ persist.sys.fflag.override.settings_provider_model=false
 
 # IORap
 ro.iorapd.enable=true 
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
 # IPO
 sys.ipo.disable=1
