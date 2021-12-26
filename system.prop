@@ -18,6 +18,15 @@ persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera
 vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,com.discord
 
+# Dex2oat
+pm.dexopt.ab-ota=speed-profile
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.image-dex2oat-filter=speed
+ro.sys.fw.dex2oat_thread_count=8
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-threads=4
+dalvik.vm.image-dex2oat-threads=4
+
 # Display
 debug.sf.disable_backpressure=1
 ro.surface_flinger.has_HDR_display=true
