@@ -152,6 +152,10 @@ PRODUCT_PACKAGES += \
     ScreenRecordOverlay \
     FPSInfoOverlay
 
+# IORap
+PRODUCT_PRODUCT_PROPERTIES += \
+     ro.iorapd.enable=true
+
 # Input
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/idc/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc \
