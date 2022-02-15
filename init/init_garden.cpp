@@ -139,14 +139,19 @@ void vendor_load_properties()
 
     std::string region = GetProperty("ro.boot.hwc", "");
     std::string hwname = GetProperty("ro.boot.hwname", "");
+    std::string product_name = GetProperty("ro.product.name", "")
 
-    if (hwname == "angelica") {
+    if (hwname == "angelica" || hwname == "angelica_second") {
         property_override("ro.product.brand", "Redmi");
         property_override("ro.product.model", "Redmi 9C");
         property_override("ro.product.device", "angelica");
     } else if (hwname == "angelicain") {
+        if (product_name == "angelicain_in") {
+            property_override("ro.product.model", "POCO C31");
+        } else {
+            property_override("ro.product.model", "POCO C3");
+        }
         property_override("ro.product.brand", "POCO");
-        property_override("ro.product.model", "POCO C3");
         property_override("ro.product.device", "angelicain");
     } else if (hwname == "angelican") {
         property_override("ro.product.brand", "Redmi");
@@ -161,6 +166,8 @@ void vendor_load_properties()
         property_override("ro.product.device", "dandelion");
         if (region == "India_9i") {
             property_override("ro.product.model", "Redmi 9I");
+        } else if (region == "VDF") {
+            property_override("ro.product.model", "Redmi 9AT");
         } else {
             property_override("ro.product.model", "Redmi 9A");
         }
