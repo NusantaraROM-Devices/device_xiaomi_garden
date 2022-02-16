@@ -187,3 +187,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshim_showlogo \
     libshim_vtservice
+
+# Prebuilt
+PRODUCT_PACKAGES += \
+    Gboard \
+    Message
