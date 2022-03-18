@@ -64,6 +64,7 @@ ro.am.reschedule_service=true
 ro.mtk_perf_fast_start_win=1
 ro.mtk_perf_response_time=1
 ro.mtk_perf_simple_start_win=1
+ro.vendor.perf.scroll_opt=true
 
 # Graphics
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
