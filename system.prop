@@ -162,7 +162,6 @@ persist.sys.use_dithering=1
 force_hw_ui=true
 ro.sf.compbypass.enable=0
 hwui.render_dirty_regions=false
-debug.sf.latch_unsignaled=1
 persist.sys.use_16bpp_alpha=1
 ro.max.fling_velocity=20000
 ro.config.enable.hw_accel=true
