@@ -168,6 +168,8 @@ void vendor_load_properties()
             property_override("ro.product.model", "Redmi 9I");
         } else if (region == "VDF") {
             property_override("ro.product.model", "Redmi 9AT");
+        } else if (product_name == "dandelion_id2") {
+            property_override("ro.product.model", "Redmi 10A");
         } else {
             property_override("ro.product.model", "Redmi 9A");
         }
