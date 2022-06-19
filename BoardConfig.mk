@@ -17,7 +17,7 @@
 DEVICE_PATH := device/xiaomi/garden
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := angelica,angelican,angelicain,cattail,dandelion,garden
+TARGET_OTA_ASSERT_DEVICE := dandelion,garden
 
 # Architecture
 TARGET_ARCH := arm
