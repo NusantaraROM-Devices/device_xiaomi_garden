@@ -30,6 +30,7 @@
 #include <cstdlib>
 #include <stdlib.h>
 #include <fstream>
+#include <regex>
 #include <string.h>
 #include <sys/sysinfo.h>
 #include <unistd.h>
@@ -139,9 +140,9 @@ void vendor_load_properties()
 
     std::string region = GetProperty("ro.boot.hwc", "");
     std::string hwname = GetProperty("ro.boot.hwname", "");
-    std::string product_name = GetProperty("ro.product.name", "");
+    std::string product_name = GetProperty("ro.product.vendor.name", "");
 
-    if (hwname == "angelica" || hwname == "angelica_second") {
+    if (regex_match(product_name, std::regex("(angelica_)(.*)"))) {
         property_override("ro.product.brand", "Redmi");
         property_override("ro.product.model", "Redmi 9C");
         property_override("ro.product.device", "angelica");
@@ -168,7 +169,7 @@ void vendor_load_properties()
             property_override("ro.product.model", "Redmi 9I");
         } else if (region == "VDF") {
             property_override("ro.product.model", "Redmi 9AT");
-        } else if (product_name == "dandelion_id2") {
+        } else if (regex_match(product_name, std::regex("(dandelion_)(.*)(2)"))) {
             property_override("ro.product.model", "Redmi 10A");
         } else {
             property_override("ro.product.model", "Redmi 9A");
