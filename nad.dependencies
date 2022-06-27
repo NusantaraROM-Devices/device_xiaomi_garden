@@ -1,0 +1,14 @@
+[
+  {
+        "remote": "github",
+        "repository": "Mayuri-Chan/proprietary_vendor_xiaomi_garden",
+        "target_path": "vendor/xiaomi/garden",
+        "branch": "11"
+  },
+  {
+        "remote": "github",
+        "repository": "Mayuri-Chan/android_external_libaptX",
+        "target_path": "external/libaptx",
+        "branch": "main"
+  }
+]
