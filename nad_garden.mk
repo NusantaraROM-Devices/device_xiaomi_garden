@@ -21,6 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # Inherit from Nusantara vendor
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
+# Official tag
+NAD_BUILD_TYPE := OFFICIAL
+
 # Some build flags
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_FACE_UNLOCK := true
